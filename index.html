@@ -5,26 +5,18 @@
 <head>
     <meta charset=utf-8>
     <meta http-equiv=X-UA-Compatible content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Geohash Demo</title>
     <link href="main.css" rel="stylesheet">
 </head>
 
 <body>
+    <script>
+        // Set the basename to match the GitHub Pages deployment path.
+        // Change this to "" when running locally.
+        window.__GEOHASH_BASENAME = "/iGeoHash";
+    </script>
     <div id=root></div>
     <script type="text/javascript" src="main.js"></script>
-</body>
-
-<script>
-    // https://geohash.softeng.co/
-
-    window.onload = function () {
-        var elements = document.getElementsByTagName("input");
-        for (var ii = 0; ii < elements.length; ii++) {
-            if (elements[ii].type == "text") {
-                elements[ii].value = "";
-            }
-        }
-    }
-</script>
 
 </html>
